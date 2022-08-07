@@ -36,6 +36,7 @@
     list-style: none;
     padding: 10px;
     gap: 50px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
 
 #sub-menu a{
@@ -62,6 +63,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
 #header-corpo > h1 {
@@ -108,6 +110,11 @@ p {
     background-color: rgb(15, 15, 15);
     text-align: center;
     color: white;
+    transition: 1s;
+}
+
+.card > a:hover {
+    background-color: rgba(10, 10, 10, 0.863);
 }
 
 /*-----RODAPE-------*/
@@ -141,6 +148,22 @@ p {
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+
+#rodape a {
+    color: white;
+    text-decoration: underline;
+}
+
+#rodape ul {
+    list-style-position: inside;
+    font-size: 18px;
+    color: white;
+    list-style: none;
+}
+
+#rodape ul li {
+    margin: 4px 0px;
 }
 
 /*-----RODAPE-INFO-EXTRA-------*/
