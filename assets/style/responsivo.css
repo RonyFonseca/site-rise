@@ -1,0 +1,42 @@
+@media screen and (max-width: 528px){
+    .menu {
+        
+    }
+
+    #button-menu-responsivo {
+        display: block;
+    }
+
+    #sub-menu {
+        display: none;
+    }
+
+    .menu ul:hover > #sub-menu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #sub-menu {
+        position: absolute;
+        background-color: rgb(15, 15, 15);
+        gap: 0;
+    }
+
+    #sub-menu li {
+        padding: 20px 0px;
+    }
+
+    #sub-menu a {
+        font-size: 16px;
+        padding:0;
+    }
+
+    .cards {
+        margin: 50px;
+    }
+
+    #info-extra {
+        max-width: 300px;
+    }
+
+}

@@ -1,0 +1,168 @@
+@charset "UTF-8"; 
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Righteous&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --font-destaque: 'Anton', sans-serif;
+    --font-normal:  'Poppins', sans-serif;
+}
+
+* {
+    margin: 0; 
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+/*-----CABECARIO-------*/
+
+#cabecario {
+    background-color: rgb(15, 15, 15);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#cabecario > img {
+    width: 100px;
+}
+
+/*-----MENU-------*/
+
+#sub-menu{
+    display: flex;
+    list-style: none;
+    padding: 10px;
+    gap: 50px;
+}
+
+#sub-menu a{
+    font-size: 18px;
+    color: white;
+    padding: 15px;
+    transition: 1s;
+}
+
+#sub-menu a:hover {
+    background-color: rgba(10, 10, 10, 0.863); 
+}
+
+/*-----CORPO-------*/
+/*-----CORPO-HEADER-------*/
+#header-corpo {
+    background: url("../img/background-img.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    max-width: 100%;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#header-corpo > h1 {
+    font-size: 100px;
+    font-family: var(--font-destaque);
+    color: white; 
+    text-shadow: 10px 5px 0px black;
+}
+
+#header-corpo > img {
+    width: 200px;
+}
+/*-----CARDS-------*/
+
+.cards {
+    margin: 100px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.card {
+    max-width: 300px;
+    min-height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card > h2 {
+    font-family: var(--font-destaque);
+    font-size: 40px;
+    color: rgba(0, 0, 0, 0.897);
+}
+
+p {
+    font-family: var(--font-normal);
+    color:rgba(0, 0, 0, 0.822)
+}
+
+.card > a {
+    padding: 14px;
+    background-color: rgb(15, 15, 15);
+    text-align: center;
+    color: white;
+}
+
+/*-----RODAPE-------*/
+
+#rodape {
+    background-color: rgb(15, 15, 15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+#cards-rodape {
+    display: flex;
+    padding: 30px;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+#cards-rodape h2 {
+    color: rgb(218, 218, 218);
+    font-size: 30px;
+}
+
+#cards-rodape p {
+    max-width: 350px;
+    color: white;
+}
+
+.card-rodape {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/*-----RODAPE-INFO-EXTRA-------*/
+
+#info-extra {
+    display: flex;
+    align-items: center;
+    border-top: 2px solid white;
+    width: 500px;
+}
+
+#info-extra > img {
+    width: 100px;
+}
+
+#info-extra > p {
+    width: 400px;
+    color: white;
+}
+
+#button-menu-responsivo {
+    display: none;
+    color: white;
+    font-size: 20px;
+}
