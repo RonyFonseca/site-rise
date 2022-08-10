@@ -91,7 +91,7 @@ html {
 }
 
 .card {
-    max-width: 300px;
+    max-width: 320px;
     min-height: 220px;
     display: flex;
     flex-direction: column;
@@ -100,13 +100,18 @@ html {
 
 .card > h2 {
     font-family: var(--font-destaque);
-    font-size: 40px;
+    font-size: 30px;
     color: rgba(0, 0, 0, 0.897);
+    padding: 10px 0px;
 }
 
 p {
     font-family: var(--font-normal);
     color:rgba(0, 0, 0, 0.822)
+}
+
+.card > p {
+    margin: 10px 0px;
 }
 
 .card > a {
@@ -115,6 +120,7 @@ p {
     text-align: center;
     color: white;
     transition: 1s;
+    margin: 10px 0px;
 }
 
 .card > a:hover {
