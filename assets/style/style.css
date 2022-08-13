@@ -111,8 +111,14 @@ p {
     color:rgba(0, 0, 0, 0.822)
 }
 
-.card > p {
-    margin: 10px 0px;
+p.preco{
+    background-color: orangered;
+    max-width: 60px;
+    padding-left: 10px;
+    color: white;
+    padding: 5px;
+    border-radius: 5px; 
+    text-align: center;
 }
 
 .card > a {
